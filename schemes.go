@@ -4,6 +4,11 @@ import (
 	v "github.com/gima/govalid/v1"
 )
 
+const (
+	// MaxWattsVersion the highest WaTTS version for which schemes are provided
+	MaxWattsVersion = "1.0.0"
+)
+
 var (
 	schemeAccessToken = v.Optional(v.String())
 	schemeUserInfo    = v.Object(
@@ -105,7 +110,6 @@ var (
 				),
 			),
 		}, // end of "1.0.0"
-
 	}
 )
 
